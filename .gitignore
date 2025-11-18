@@ -121,3 +121,15 @@ back/data/*.md
 !README.md
 !**/README.md
 
+# Scripts and test files (keep local only)
+back/seed_all.py
+back/seed_orders.py
+back/seed_users.py
+back/seed_vector_db.py
+back/test_api.sh
+back/test_n8n_email.py
+back/test_n8n_payload.json
+back/update_emails.py
+back/update_user_passwords.py
+back/update_user_roles.py
+
