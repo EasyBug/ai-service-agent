@@ -1,0 +1,9 @@
+{
+  "order_id": "ORD-2024-TEST",
+  "customer_name": "测试用户",
+  "customer_email": "test@example.com",
+  "product": "测试产品",
+  "status": "已发货",
+  "amount": "999.99",
+  "created_at": "2025-11-18T12:00:00.000000"
+}

@@ -1,0 +1,73 @@
+# ============================================
+# 智能客服系统后端 - 依赖包清单
+# 适配 Gemini 2.5 Flash 流式、多模态、JSON 模式
+# ============================================
+
+# ========== 核心 Web 框架 ==========
+fastapi>=0.115.0,<0.122.0
+uvicorn[standard]>=0.30.0,<0.39.0
+starlette>=0.42.0,<0.51.0
+anyio>=4.0.0
+
+# ========== Google Gemini AI SDK ==========
+# 支持 Gemini 2.5 Flash 的完整功能（流式、多模态、JSON、工具调用）
+google-genai>=1.50.0,<2.0.0
+google-generativeai>=0.8.5,<0.9.0
+google-ai-generativelanguage>=0.6.15,<0.7.0
+google-auth>=2.43.0,<3.0.0
+
+# ========== LangGraph 工作流引擎 ==========
+langgraph>=1.0.0,<2.0.0
+langgraph-checkpoint-redis>=0.1.2,<0.2.0
+
+# ========== LlamaIndex RAG 框架 ==========
+llama-index>=0.14.0,<0.15.0
+llama-index-vector-stores-postgres>=0.7.0,<0.8.0
+llama-index-embeddings-gemini>=0.4.0,<0.5.0
+
+# ========== 数据库驱动 ==========
+# PostgreSQL 驱动（新版本，推荐使用）
+psycopg[binary]>=3.2.0,<4.0.0
+# PostgreSQL 异步驱动
+asyncpg>=0.30.0,<0.31.0
+# psycopg2-binary（llama-index-vector-stores-postgres 的必需依赖）
+psycopg2-binary>=2.9.9,<3.0.0
+# SQLAlchemy ORM
+SQLAlchemy>=2.0.25,<3.0.0
+
+# ========== 向量数据库 ==========
+# PostgreSQL 向量扩展
+pgvector>=0.4.0,<0.5.0
+
+# ========== Redis ==========
+redis>=6.4.0,<7.0.0
+
+# ========== 性能优化库 ==========
+# NumPy 2.x（性能提升）
+numpy>=2.0.0,<3.0.0
+# 高性能 JSON 序列化
+orjson>=3.11.0,<4.0.0
+# 高性能 MessagePack 序列化
+ormsgpack>=1.12.0,<2.0.0
+
+# ========== 数据验证与配置 ==========
+pydantic>=2.12.0,<3.0.0
+pydantic-settings>=2.12.0,<3.0.0
+
+# ========== HTTP 客户端 ==========
+httpx>=0.28.0,<0.29.0
+
+# ========== 工具库 ==========
+python-dotenv>=1.2.0,<2.0.0
+typing-extensions>=4.15.0
+
+# ========== 认证与密码加密 ==========
+passlib[bcrypt]>=1.7.4,<2.0.0
+python-jose[cryptography]>=3.3.0,<4.0.0
+email-validator>=2.0.0,<3.0.0
+
+# ========== 文件上传支持 ==========
+python-multipart>=0.0.6,<1.0.0
+
+# ========== 测试框架 ==========
+pytest>=9.0.0,<10.0.0
